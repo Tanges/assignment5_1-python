@@ -7,12 +7,8 @@ n = int(input("Enter the length of the sequence: ")) # Do not change this line
 listi = [1,2,3]
 for i in range(0, n):
     if i < 3: #Check through the list and print out first 3 numbers
-        if i != n-1: #If lenght of sequence is not over then keep on adding ','
-            print(listi[i], end=", ")
-        else: print(listi[i]) #Print out storage without ','
+        print(listi[i])
     else: #Print out the rest until lenght of the sequence is finished
         storage = sum(listi)
         listi = listi[1:] + [storage] #Adds last number in list and adds it to storage variable
-        if i != n-1: #If lenght of sequence is not over then keep on adding ','
-            print(storage, end=", ")
-        else: print(storage) #Print out storage without ','
+        print(storage)
